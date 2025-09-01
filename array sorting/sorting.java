@@ -2,6 +2,72 @@
 
 class sorting{
 
+    public static void quickSort(int arr[] , int si , int ei){
+        if(si >= ei) return ;
+
+        int pivot = ei;
+        int  i= si ;
+        int j = si ;
+
+        while (j <= ei){
+            if(arr[j] < arr[pivot]){
+                //swap 
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp ;
+                i++;
+            }
+            j++;
+        }
+         // positioning pivot at correct place 
+        // swap i and pivot 
+        int temp = arr[pivot] ;
+        arr[pivot] = arr[i];
+        arr[i] = temp; 
+        // i++;
+
+        // i is pointing to pivot 
+        quickSort(arr, si , i-1);
+        quickSort(arr , i+1 , ei);
+
+
+    }
+
+
+    // public static void quickSort(int arr[]   , int si , int ei){
+        
+    //     if(si == ei) return;
+        
+    //     int pivot = si;
+    //     int i = pivot+1;
+    //     int j = ei;
+
+
+    //     while(arr[i] < arr[pivot]){
+    //         i++;
+    //     }
+    //     while(arr[j] > arr[pivot]){
+    //         j--;
+    //     }
+
+    //     if(i < j ){
+    //         //swap i and j 
+    //         int temp = arr[i];
+    //         arr[i] = arr[j];
+    //         arr[j] = temp;
+    //     }
+    //     else{
+    //         // swap j and pivot 
+    //         int temp = arr[j];
+    //         arr[j]= arr[pivot];
+    //         arr[pivot] = temp;
+    //         quickSort(arr ,si , j );
+    //         quickSort(arr , j+1 , ei);
+    //     }
+
+        
+    // }
+
     public static void bubbleSort(int[] nums) {
         
         int n = nums.length;
@@ -43,7 +109,6 @@ class sorting{
                     // operation
                     least_number = nums[k];
                     least_index = k ;
-
                 }
                 k++;
                 // System.out.println(".()" + least_index);
@@ -60,6 +125,32 @@ class sorting{
         }
     }
 
+
+    //insertion sort -> insert key into correct position before key-idx 
+    // key start from index 1 to n (i++)
+    public static void insertionSort(int[] nums){
+        int n = nums.length;
+
+        int key = 1;
+
+        for(int i = 1 ; i<n ;i++){
+            key = i;
+            // int val = nums[i];  //key value 
+
+            if (nums[key] < nums[key-1] ) {
+                int k =key-1;
+                int val = nums[key];  //key value
+
+                 while( (k >= 0) && val < nums[k] ){                   
+                    //shifting all values by index 1 before key
+                    nums[k+1] = nums[k];
+                    k--;
+                 }
+
+                 nums[k+1] = val ;
+            }  
+        }
+    }
 
     //// print arrr element
       public static void printArr(int[] nums){
@@ -80,7 +171,9 @@ class sorting{
         printArr(nums);
 
         // bubbleSort(nums);
-        selectionSort(nums);
+        // selectionSort(nums);
+        // insertionSort(nums);
+        quickSort(nums , 0 , nums.length-1);
         printArr(nums);
 
 
