@@ -66,7 +66,11 @@ public class MergeSort{
         int arr[]= {9, 55,-4 , 2, 6 , 89 , 7, 12};
 
         printArr(arr);
+<<<<<<< HEAD
         mergeSort(arr , 0 , arr.length-1);
+=======
+        mergeSort(arr , 2 , arr.length-1);
+>>>>>>> 73f7e2d6b2f978ee8bb33172c6c41ca4f8e0a269
         printArr(arr);
 
 
