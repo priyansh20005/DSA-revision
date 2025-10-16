@@ -68,6 +68,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MinimumJumps",
+            "request": "launch",
+            "mainClass": "MinimumJumps",
+            "projectName": "DSA-revision-main_a05cefa"
+        },
+        {
+            "type": "java",
+            "name": "MinimumPartitioning",
+            "request": "launch",
+            "mainClass": "MinimumPartitioning",
+            "projectName": "DSA-revision-main_a05cefa"
+        },
+        {
+            "type": "java",
+            "name": "MCM",
+            "request": "launch",
+            "mainClass": "MCM",
+            "projectName": "DSA-revision-main_a05cefa"
+        },
+        {
+            "type": "java",
+            "name": "countBST",
+            "request": "launch",
+            "mainClass": "countBST",
+            "projectName": "DSA-revision-main_a05cefa"
+        },
+        {
+            "type": "java",
+            "name": "CatalanNum",
+            "request": "launch",
+            "mainClass": "CatalanNum",
+            "projectName": "DSA-revision-main_a05cefa"
+        },
+        {
+            "type": "java",
+            "name": "wildcardEntry",
+            "request": "launch",
+            "mainClass": "wildcardEntry",
+            "projectName": "DSA-revision-main_a05cefa"
+        },
+        {
+            "type": "java",
+            "name": "stringConversion",
+            "request": "launch",
+            "mainClass": "stringConversion",
+            "projectName": "DSA-revision-main_a05cefa"
+        },
+        {
+            "type": "java",
+            "name": "editDistance",
+            "request": "launch",
+            "mainClass": "editDistance",
+            "projectName": "DSA-revision-main_a05cefa"
+        },
+        {
+            "type": "java",
+            "name": "tresureHunt",
+            "request": "launch",
+            "mainClass": "tresureHunt",
+            "projectName": "DSA-revision-main_a05cefa"
+        },
+        {
+            "type": "java",
             "name": "basic",
             "request": "launch",
             "mainClass": "basic",
