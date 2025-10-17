@@ -68,6 +68,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "subarrayMax",
+            "request": "launch",
+            "mainClass": "subarrayMax",
+            "projectName": "DSA-revision-main_a05cefa"
+        },
+        {
+            "type": "java",
             "name": "MinimumJumps",
             "request": "launch",
             "mainClass": "MinimumJumps",
